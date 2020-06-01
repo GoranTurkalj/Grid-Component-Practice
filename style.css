@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Karla";
+  max-width: 1440px;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #d0e2ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container {
+  overflow: hidden;
+  border-radius: 7px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: min-content 1fr;
+      grid-template-rows: -webkit-min-content 1fr;
+      grid-template-rows: min-content 1fr;
+}
+
+.container-item {
+  padding: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+}
+
+.subtitle--top {
+  color: #c0df34;
+}
+
+.container-item--top {
+  background-color: white;
+  grid-column: 1 / -1;
+}
+
+.container-item--top h2 {
+  color: #2ab2af;
+  margin-bottom: 1.5rem;
+}
+
+.container-item--top p {
+  color: #98a6bd;
+}
+
+.container-item--top p:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.container-item--left {
+  background-color: #2ab2af;
+  color: white;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.container-item--left p {
+  color: #e5eff5;
+}
+
+#price-tag {
+  color: #f0f6f9;
+  margin-bottom: 0.5rem;
+}
+
+#price {
+  vertical-align: middle;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+#cta-button {
+  height: 3rem;
+  margin-top: 3rem;
+  background-color: #c0df34;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+#cta-button:hover, #cta-button:focus, #cta-button:active {
+  background-color: white;
+  color: #2ab2af;
+}
+
+.container-item--right {
+  background-color: #2dbebc;
+  color: white;
+  grid-column: 2 / -1;
+}
+
+.container-item--right ul {
+  list-style-type: none;
+}
+
+.container-item--right li {
+  color: #e5eff5;
+  line-height: 1.5;
+}
+/*# sourceMappingURL=style.css.map */
